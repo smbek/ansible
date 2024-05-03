@@ -1,0 +1,11 @@
+- hosts: all
+  tasks:
+  - name: Copy files
+    copy:
+      src: /tmp/kaizen.yml # local machine
+      dest: /root/hello.yml        # remote machine
+      remote_src: yes
+
+  - name: Create folder
+    shell: mkdir -p kaizen
+      
