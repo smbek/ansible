@@ -16,6 +16,7 @@
 - name: Check user
   shell: mysql -e "select 1 from mysql.user where user = 'wordpressuser';" | grep 1
   register: check_user
+  ignore_errors: yes
 
 - name: Create user
   shell: mysql -e "CREATE USER wordpressuser@localhost IDENTIFIED BY 'password';"
