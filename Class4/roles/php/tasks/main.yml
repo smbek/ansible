@@ -1,0 +1,13 @@
+- name: Add repository php74
+  yum_repository:
+    name: remi-php74
+    description: php 74
+    baseurl: https://rpms.remirepo.net/enterprise/7/php74/$basearch/
+    enabled: yes
+    gpgcheck: yes
+    gpgkey: https://rpms.remirepo.net/RPM-GPG-KEY-remi
+
+- name: Install php
+  yum: 
+    name: "{{ php_packages }}"
+

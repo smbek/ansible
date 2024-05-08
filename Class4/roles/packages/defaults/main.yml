@@ -1,0 +1,7 @@
+packages: 
+  - wget
+  - unzip
+  - epel-release
+  - mysql
+  - htop
+  
