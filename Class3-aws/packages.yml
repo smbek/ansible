@@ -1,0 +1,11 @@
+- name: Install packages
+  yum:
+    name:
+      - wget
+      - php-mysqlnd
+      - php-fpm
+      - php-mysqli
+      - mariadb105-server
+      - php-json
+      - php
+      - php-devel
